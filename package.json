@@ -1,0 +1,22 @@
+{
+  "name": "node-todo-v1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ahmed Eid",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "nodemon --exec babel public/script.js -o public/script.min.js --sourcemaps ",
+    "start": "nodemon exec node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0"
+  }
+}
